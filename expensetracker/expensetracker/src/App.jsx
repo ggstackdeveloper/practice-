@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import Expenses from './components/expenses'
+import Expenselist from './components/expenselist'
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +13,11 @@ function App() {
     <>
         <div className="container">
           <h1>Welcome to the Expense Tracker app</h1>
-          <p>Track your expenses with ease!</p>
+        <p>Track your expenses with ease!</p>
+        
+        <Expenses />
+        <Expenselist />
+        
         </div>
     </>
   )
